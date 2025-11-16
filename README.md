@@ -24,14 +24,20 @@ export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
 3.Export the credentials in your AWS CLI by running "aws configure" \
 4.Create a s3 bucket \
 5.Create EC2 machine (Ubuntu) & add Security groups 5000 port \
-6.Run the following command on EC2 machine \
+6.Run the following command on EC2 machine 
 
 ```bash
 sudo apt update
 
 sudo apt install python3-pip
 
-sudo apt install pipenv
+pip install --user pipenv
+
+export PATH="$HOME/.local/bin:$PATH"
+
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+
 
 sudo apt install virtualenv
 
