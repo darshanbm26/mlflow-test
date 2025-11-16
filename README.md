@@ -19,12 +19,12 @@ export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
 ```
 
 ## MLflow on AWS Setup:
-1.Login to AWS console.
-2.Create IAM user with AdministratorAccess
-3.Export the credentials in your AWS CLI by running "aws configure"
-4.Create a s3 bucket
-5.Create EC2 machine (Ubuntu) & add Security groups 5000 port
-6.Run the following command on EC2 machine
+1.Login to AWS console. \
+2.Create IAM user with AdministratorAccess \
+3.Export the credentials in your AWS CLI by running "aws configure" \
+4.Create a s3 bucket \
+5.Create EC2 machine (Ubuntu) & add Security groups 5000 port \
+6.Run the following command on EC2 machine \
 
 ```bash
 sudo apt update
